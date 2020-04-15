@@ -1,0 +1,78 @@
+html {
+    text-align: center;
+    vertical-align: baseline;
+    background-color: #ffc66a;
+    transform: scale(0.80);
+}
+
+h1 {
+    font-family: "Bungee Outline",Garamond,Arial;
+    font-size: 50px;
+}
+
+h2, h3 {
+    font-family: "Gaegu", Arial, Garamond;
+    font-size: 22px;
+}
+
+#start, #pause, #stop, #resetButton {
+    font-size: 20px;
+    border-style: groove;
+    padding: 5px;
+    text-emphasis: bold;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dfff6a;
+    background-color: #8a6aff;
+    border-radius: 15px;
+    
+}
+
+#workSetter {
+    display: inline-flex;
+}
+
+#breakSetter {
+    display: inline-flex;
+}
+
+#counter {
+    font-family: 'Londrina Sketch';
+    font-size: 100px;
+    margin: 10px;
+}
+
+#controlButtons {
+    margin-top: 15px;
+}
+
+#timeSetters {
+    line-height: 7px;
+    margin: 15px;
+}
+#increaseWork, #decreaseWork, #increaseBreak, #decreaseBreak {
+    font-size: 40px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-style: groove;
+    text-emphasis: bold;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dfff6a;
+    background-color: #8a6aff;
+    line-height: 5px;
+    border-radius: 5px;
+}
+
+#phase, #work, #break {
+    font-family: 'Coming Soon';
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+}

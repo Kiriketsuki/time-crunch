@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel = "stylesheet" href = "styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Gaegu' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Londrina Sketch' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Coming Soon' rel='stylesheet'>
+        
+        <title>
+            Time Crunch
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            Time Crunch
+        </h1>
+
+        <h2>
+            A simple Javascript project, where you get to set a <a href = "https://en.wikipedia.org/wiki/Pomodoro_Technique"> Pomodoro </a> clock for yourself
+        </h2>
+
+
+        <main>
+            <p id = "counter"> 
+                Counter
+            </p>
+            
+            <div id = "phase">
+                Time to work!
+            </div>
+
+            <div id = "controlButtons">
+                <button id = "start">
+                    Start
+                </button>
+
+                <button id = "pause">
+                    Pause
+                </button>
+
+                <button id = "stop">
+                    Stop
+                </button>
+            </div>
+
+            <div id = "timeSetters">
+                <div id = "workSetter">
+                    <button id = "increaseWork">
+                        ↑
+                    </button>
+                    <p id = "work"> 
+                        Work: 25:00
+                    </p>
+                    <button id = "decreaseWork">
+                        ↓
+                    </button>
+                </div>
+
+                <div id = "breakSetter">
+                    <button id = "increaseBreak">
+                        ↑
+                    </button>
+                    <p id = "break"> 
+                        Break: 5:00
+                    </p>
+                    <button id = "decreaseBreak">
+                        ↓
+                    </button>
+                </div>
+            </div>
+
+            <div id = "reset">
+                <button id = "resetButton">
+                    Reset
+                </button>
+            </div>
+        </main>
+
+
+        <script src = "scripts.js">
+        </script>
+    </body>
+    
+</html>
