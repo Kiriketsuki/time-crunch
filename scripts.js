@@ -44,27 +44,27 @@ function updateCounter() {
         if (seconds < 10) {
             seconds = "0" + seconds;        
         }
-        counterElement.innerHTML = `${minutes}:${seconds}`;
+        counterElement.innerHTML = `${minutes}:${seconds} MM:SS`;
     } else if (phase == 1) {
         updateBreakTime();
         if (breakSeconds < 10) {
             breakSeconds = "0" + breakSeconds;
         }
-        counterElement.innerHTML = `${breakMinutes}:${breakSeconds}`;
+        counterElement.innerHTML = `${breakMinutes}:${breakSeconds} MM:SS`;
     }
 }
 
 
 function updateWork() {
     
-    workDisplay.innerHTML = `Work Time: ${minutes}:${seconds}`;
+    workDisplay.innerHTML = `Work Time: ${minutes}:${seconds} MM:SS`;
 }
 
 function updateBreak() {
     if (breakSeconds < 10) {
         breakSeconds = "0" + breakSeconds;
         }
-    breakDisplay.innerHTML = `Break Time: ${breakMinutes}:${breakSeconds}`
+    breakDisplay.innerHTML = `Break Time: ${breakMinutes}:${breakSeconds} MM:SS`
 }
 
 function countdown() {
@@ -82,7 +82,8 @@ function countdown() {
 }
 
 function startCounter() {
-   counterInterval = setInterval(countdown,1000);
+    clearInterval(counterInterval);
+    counterInterval = setInterval(countdown,1000);
 }
 
 function pauseCounter() {
